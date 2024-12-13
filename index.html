@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="İE Veteriner Kliniği, your trusted partner for pet health, offering services like regular checkups, emergency care, and state-of-the-art facilities.">
+  <title> İE Veteriner Kliniği</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="md.css">
+  <link rel="stylesheet" href="lg.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-expand-lg"> 
+      <div class="container-fluid max-width">
+
+        <a class="navbar-brand" href="#hero-part"><img
+            alt="Ismail Emsal logo, featuring a cow, dog, bird, and paw on top of the letters, designed in black and white for a veterinary clinic."
+            class="logo"  src="./media/logoo.svg"></a>
+
+        <!-- Emergency Button (always visible) -->
+        <a class="btn btn-emg d-block d-lg-none d-md-none me-2" href="#emergency">ACİL</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero-part">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-part">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./service.html">Hizmetler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Ekibimiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-part">İletişim</a>
+            </li>
+          </ul>
+
+          <!-- Emergency Button (for larger screens) -->
+          <a class="btn btn-emg d-none d-md-block d-lg-block" href="#emergency">ACİL 7/24</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="divider"></div>
+  
+  <section id="hero-part" class="hero-section max-width">
+
+    <div class="hero-content ">
+      <h1>Evcil hayvanınız için yılda bir kez düzenli sağlık kontrolü yaptırıyor musunuz?</h1>
+      <p>Sağlık kontrollerini aksatmayın, hemen veteriner hekimimizle iletişime geçin ve randevu alın!</p>
+      <a href="#contact-part" class="btn-primary">Randevu Al</a>
+    </div>
+    <div class="hero-background hero-mobile-size"></div> <!-- Only for background -->
+  </section>
+
+
+  <div class="divider max-width"></div>
+  
+  <section id="about-part" class="about-us max-width">
+    <div class="bg-header-pattern">
+      <h1>Kliniğimiz Hakkında</h1>
+    </div>
+    <div>
+      <img class="icon-vet" src="./media/icon-about.svg"
+      alt="A veterinarian treating a dog on an examination table"/>
+    </div>
+    <div class="about-content">
+      <h3>İsmail Emsal Veteriner Kliniği</h3>
+      <p>Fırat Üniversitesi Veteriner Fakültesi’nden 1985 yılında mezun olan İsmail Emsal kendi kliniğinde 2014 yılından
+        itibaren 25 yıllık tecrübesi ve bilgi birikimi ile hayvan severlere hizmet vermektedir.</p>
+
+      <p>İsmail Emsal veterinerlik alanında çok aktif bir kişiliktir. Seminer, eğitim, sempozyum vb. aktivitelere
+        katılım sağlamaktadır. Kendisini sürekli güncel tutma ve öğrenme hırsı ile gelişime açık ve mesleğine önem veren
+        birisidir.
+      </p>
+    </div>
+
+
+  </section>
+  <section class="cards-container max-width">
+    <div class="card-item card-service">
+      <div>
+        <img  alt="A symbol of trust, with a checkmark inside a box held by two open hands"
+          src="./media/icon-card1.svg" />
+      </div>
+      <p class="card-title"> %100 Güvenilir Hizmet </p>
+      <p>Kliniğimiz, hayvan sağlığını her şeyin önünde tutar. Veteriner hekimlerimiz ve uzman ekibimiz, en iyi bakım ve
+        tedavi hizmetlerini sunarak, hayvanlarınızın güvenliğini ve sağlığını garanti eder. Her bir hastaya özel
+        yaklaşımımızla, güvenilir ve kaliteli bir hizmet sunduğumuza inanıyoruz.</p>
+    </div>
+    <div class=" card-item card-emergency">
+      <div>
+        <img  alt="A 24-hour symbol with a phone icon beneath it" src="./media/icon-card2.svg" />
+      </div>
+      <p class="card-title">24 Saat Acil Müdahale</p>
+      <p>İsmail Emsal Veteriner Kliniği, acil durumlarda daima yanınızda! 7/24 acil müdahale hizmetimizle hayvanlarınızın herhangi bir sağlık sorununda her zaman bize ulaşabilirsiniz. Uzman veterinerlerimizle hızlı ve etkili müdahale sağlıyoruz.</p>
+    </div>
+    <div class="card-item card-equipment">
+      <div>
+        <img 
+          alt="A hospital-like building symbolizing a modern, well-equipped veterinary clinic" src="./media/icon-card3.svg" />
+      </div>
+      <p class="card-title ">Modern Donanımlı Klinik</p>
+      <p>Kliniğimiz, hayvan sağlığını en yüksek düzeyde korumak için en son teknolojik ekipmanlarla donatılmıştır.
+        Ultrason, röntgen ve laboratuvar testleri gibi ileri düzey cihazlarla, doğru teşhis ve etkili tedavi yöntemleri
+        sunuyoruz. Her zaman hayvanları severek ve güncel tıbbi cihazlarla hizmet vermekteyiz.</p>
+    </div>
+  </section>
+  
+  <div class="divider max-width"></div>
+  <section id="team" class="team-section max-width">
+    <div class="bg-header-pattern section-title">
+      <h3>Çalışma Arkadaşlarımız</h3>
+    </div>
+    
+        <img class="team-member-photo-round" alt="Veterinarian Ismail Emsal holding a sweet cat in his arms"
+          src="./media/teammember-photo.png" />
+
+        <div class="team-info">
+          <p class="team-member-info">İsmail EMSAL</p>
+          <p class="team-member-info">Sorumlu Veteriner Hekim</p>
+          <p class="team-member-info">Fırat Üniversitesi Veteriner Fakültesi Mezunu</p>
+        </div>
+      
+    
+  </section>
+
+  <div class="divider max-width"></div>
+  <section id="contact-part" class="contact-section max-width">
+    
+      <div class="bg-header-pattern section-title">
+        <h3>Bize Ulaşın</h3>
+      </div>
+      <img class="w-40 contact-image" src="./media/contact-icon.svg"
+          alt="Two buildings representing the veterinary clinic, with an address marker symbolizing the location" />
+      
+        <div class="contact-details">
+          <h4>Adres:</h4>
+          <h5>İsmail Emsal Veteriner Kliniği</h5>
+
+          <p>Adres: Örnek caddesi, Yıldırım mahallesi, Otomatik apartmanı, No.11
+
+          </p>
+          <p>Çalışma saatleri : 7/24 </p>
+          <p><a class="highlight-on-hover" href="tel:905359731238">Tel : 905359731238</a></p>
+        </div>
+  </section>
+  <div class="divider max-width"></div>
+  <section id="emergency" class="emergency-section">
+    <span class="emergency-text-span">7/24</span>
+    <span class="emergency-text"><a href="https://wa.me/15551234567">Whatsapp'tan Acil hizmetine ulaş!</a></span>
+
+
+    <img class="custom-width" src="./media/mobile-photo.png"
+      alt="An image of a real phone with the veterinarian's name, surname, and contact number displayed" />
+
+
+  </section>
+  <div class="divider"></div>
+
+  <footer class="footer-section">
+    <div class="footer-content max-width">
+      <div class="logo">
+        <a class="navbar-brand" href="#"><img
+            alt="Ismail Emsal logo, featuring a cow, dog, bird, and paw on top of the letters, designed in black and white for a veterinary clinic."
+            class="logo" src="./media/logoo.svg"></a>
+      </div>
+      <div class="contact-info">
+        <p>Adres: Örnek caddesi, Yıldırım mahallesi, Otomatik apartmanı, No.11 </p>
+        <p><a class="highlight-on-hover" href="tel:905359731238">Tel : 905359731238</a></p>
+      </div>
+      <div class="social-icons">
+
+        <a href="https://www.instagram.com/vethekie/"><img alt="instagram icon" class="w-2" src="./media/insta-icon.svg"></a>
+        <a href="https://www.facebook.com/profile.php?id=100068578762693"><img alt="facebook icon" class="w-2" src="./media/fb-icon.svg"></a>
+
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="footer-bottom">
+      <span>Copyright 2024.</span>
+      <span>Design by AyselGokceKurt</span>
+      <span>İsmail Emsal Veteriner Kliniği</span>
+    </div>
+  </footer>
+
+</body>
+
+</html>

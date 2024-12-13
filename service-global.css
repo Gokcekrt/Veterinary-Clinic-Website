@@ -1,0 +1,252 @@
+:root {
+    /* Color Palette */
+--btn-primary-bg: #00CED1;
+/* Main button color */
+--text-color: #ffffff;
+--buton-text-color:#2B2B2B;
+/* Button text color */
+--btn-primaryhover: #005959;
+/* Main button hover color */
+--box-shadow:#0000001a;
+--divider-color: #e5e5e5;
+/* Divider line color */
+--linear-gradient-color:#ffffff99;
+--menu-font-color: #333333;
+/* Menu text color */
+--detail-button:#000000cc;
+/*for details button color */
+--btn-emergency: #FFE082;
+/* Emergency button color */
+--btn-emergency-gradient: #FFD54F;
+--btn-emergencyhover: #FFB300;
+/* Emergency button hover color */
+
+/* Fonts */
+--font-primary: 'Montserrat', sans-serif;
+/* Main font */
+--bs-font-sans-serif: var(--font-primary);
+/* Bootstrap font */
+--bs-body-font-family: var(--bs-font-sans-serif);
+/* General body font */
+
+/* Font Sizes */
+font-size: 16px;
+/* Default font size */
+--font-size-large: 20px;
+/* Large font size */
+
+/* Bootstrap Defaults */
+--bs-nav-link-color: var(--menu-font-color);
+/* Nav link text color */
+--bs-nav-link-font-weight: 800;
+/* Nav link font weight */
+--bs-navbar-collapse-bg: #ffffff;
+/* Navbar dropdown background */ }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.max-width {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+
+
+.btn-emg.d-block {
+    margin-left: auto;
+}
+
+.btn-emg {
+    min-width: 48px;
+    background: linear-gradient(90deg, var(--btn-primary-bg), var(--btn-emergency-gradient));
+    border-radius: 0.625rem;
+    color: var(--text-color);
+    padding: 0.5rem 2rem;
+}
+
+.btn-emg:hover {
+    background: var(--btn-emergencyhover);
+}
+
+.logo {
+    max-width: 120px;
+}
+
+.navbar .navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar.navbar-expand-lg.navbar {
+    padding: 0;
+    height: 120px;
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    background-color: var(--text-color);
+    font-weight: 700;
+    color: var(--menu-font-color);
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: var(--btn-primary-bg);
+    color: var(--text-color);
+    border-radius: 0.3rem;
+}
+
+
+.divider {
+    border: 1px solid var(--divider-color);
+    width: 100%;
+}
+
+
+
+.cards-container {
+    display:grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto;
+    
+
+}
+.services-photo-round {
+    border-radius: 50%;
+    width: 200px;
+    max-width: 100%;
+  height:200px;
+  object-fit: cover;
+  max-height:100%;
+    margin: 1rem;
+    border: 2px solid var(--btn-primary-bg); 
+}
+
+.card-item {
+    border: 2px solid var(--btn-primaryhover);
+   margin: 1.5rem auto;
+    padding: 1rem;
+    border-radius:0.625rem;
+  display:grid;
+  row-gap: 0.5rem;
+    box-shadow: 0 4px 6px #0000001a;
+    grid-template-rows:auto auto 1fr;
+    background-color:var(--text-color);
+    justify-items: center;
+    text-align: justify;
+    align-items: center;
+}
+.card-title {
+    background-color:var(--buton-text-color);
+    color:var(--text-color);
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius:0.625rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.photo-container {
+    position: relative; /* Butonun doğru konumlanması için gerekli */
+}
+
+.btn-primary {
+    position: absolute;
+    transform: translateX(-50%);
+    padding:1rem 1.5rem;
+    background-color: var(--detail-button);
+    color:var(--text-color);
+    border: none;
+    border-radius:0.2rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+    pointer-events: none; /* Tıklamayı başlangıçta engeller */
+    bottom:1rem;
+    left: 50%;
+    
+}
+
+.photo-container:hover .btn-primary {
+    opacity: 1;
+    pointer-events: auto; /* Tıklamayı etkinleştirir */
+}
+.card-item:hover{
+    background-color:var(--btn-primaryhover);
+    color:var(--text-color);
+}
+.card-item:hover .card-title{
+    background-color:var(--btn-primary-bg);
+    color:var(--buton-text-color);
+    font-weight: 700;
+}
+
+.w-2 {
+    width:2rem;
+    margin:0.5rem;
+}
+.footer-section {
+    background: linear-gradient(90deg, var(--btn-primary-bg), var(--btn-emergency-gradient));
+    width: 100%;
+    min-height: 200px;
+    padding: 2rem 0; 
+}
+
+.footer-content { 
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    margin: 0 auto;
+}
+
+.contact-info {
+    font-weight: 500;
+    padding:0.5rem;
+    text-align: center;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-size: 12px;
+    padding:1rem;
+    font-weight: 600;
+   
+}
+.highlight-on-hover:hover{
+    color:var(--buton-text-color);
+    font-weight: 600;
+}
+.highlight-on-hover:active{
+    color:#FFB300;
+    font-weight: 500;
+}
+
